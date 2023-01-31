@@ -25,3 +25,4 @@ Database needs to be created in SQL Server. File ***db-script.sql***.
 ## Others
 - This markdown file is created using following [syntax](https://www.markdownguide.org/basic-syntax/)
 - Commit approach based in [semanting commit messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+- See [naming convention](https://github.com/naming-convention/naming-convention-guides/tree/master/python) used

@@ -1,6 +1,6 @@
 from html.parser import HTMLParser
 
-class  TimParser(HTMLParser):
+class  TfsParser(HTMLParser):
     #creating lists to parse the data in
     StartTags_list = list()
     EndTags_list = list()
@@ -8,7 +8,7 @@ class  TimParser(HTMLParser):
     Comments_list = list()
     LinksList = set()
     
-    def  handle_starttag(self, startTag, attrs):
+    def handle_starttag(self, startTag, attrs):
         if startTag=='a':
             for attr in attrs:
                 if attr[0]=='href' and "wp-content/uploads/" in attr[1]:
