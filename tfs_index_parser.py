@@ -1,6 +1,6 @@
 from html.parser import HTMLParser
 
-class  TfsParser(HTMLParser):
+class TfsParser(HTMLParser):
     #creating lists to parse the data in
     StartTags_list = list()
     EndTags_list = list()

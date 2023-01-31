@@ -15,6 +15,19 @@ def save_episode(episodeNumber, title):
                                 ,NULL)'''
     execute_sql_cmd(insertEpisodeCmd)
 
+def save_episode_talk(episodeId, interventionNumber, speaker, speech):
+    insertEpisodeTalkCmd = f'''INSERT INTO [dbo].[EpisodeTalk]
+                                ([EpisodeId]
+                                ,[InterventionNumber]
+                                ,[Speaker]
+                                ,[Speech])
+                            VALUES
+                                ({episodeId}
+                                ,{interventionNumber}
+                                ,'{speaker}'
+                                ,'{speech}')'''
+    execute_sql_cmd(insertEpisodeTalkCmd)
+
 def execute_sql_cmd(cmd):
     conn = pyodbc.connect('''DRIVER={ODBC Driver 18 for SQL Server};
                           SERVER=localhost;

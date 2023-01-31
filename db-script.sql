@@ -21,6 +21,7 @@ CREATE TABLE EpisodeGuest (
 CREATE TABLE EpisodeTalk (
 	Id INT NOT NULL IDENTITY PRIMARY KEY,
 	EpisodeId INT,
-	GuestName VARCHAR(255),
+	InterventionNumber INT,
+	Speaker VARCHAR(255),
 	Speech NVARCHAR(max)
 )
