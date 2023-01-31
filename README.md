@@ -1,14 +1,14 @@
 # techlab-timferriss
 This project is only for educational purposes. All the original podcasts and transcipts can be found in the [Tim Ferriss Show blog](https://tim.blog/).
 ## Goal
-Scrap Tim Ferris podcast's transcripts and save them as structured data. After it, data can be easily used in other uses cases like:  
-- Get a list of words in a episode and its translation 
-- Get the list of episodes where a certain word appear (useful to find episodes about a certain topic)  
-
-## Gather data
-- **Index URL**:  https://tim.blog/2018/09/20/all-transcripts-from-the-tim-ferriss-show/
-- **PDF**: Episodes #0 to #129
-- **Html**: Episodes #130 to #652 (and raising)
+Use Python to apply data analysis over Tim Ferris podcast's transcripts. 3 steps needed:
+- **Collect the data**: All podcast transcripts can be found [here](https://tim.blog/2018/09/20/all-transcripts-from-the-tim-ferriss-show/)
+  - **PDF**: Episodes #0 to #150
+  - **Html**: Episodes #130 to #652 (and raising)
+- **Clean the data**: Parse pdf and Html files and save them as structured data (SQL Server)
+- **Analyze the data**. After it, data could be used to support uses cases like:  
+  - Get a list of words in a episode and its translation 
+  - Get the list of episodes where a certain word appear (useful to find episodes about a certain topic)  
 
 ## Technical perspective
 This project is written in **Python**. I think it could also be written in Powershell / Bash but Python's community have a really nice set of libraries. Specially PDF parsing would have been difficult in some other shell script language.  
